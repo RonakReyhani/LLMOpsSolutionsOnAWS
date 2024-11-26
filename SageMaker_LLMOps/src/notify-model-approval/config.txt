@@ -1,0 +1,4 @@
+image_name=notify-model-approval
+repo_name=sagemaker-llmops-notify
+aws_account=767397716159
+aws_region=us-east-1

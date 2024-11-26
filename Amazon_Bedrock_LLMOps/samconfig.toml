@@ -1,0 +1,12 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "bedrock-llmops-pipeline"
+resolve_s3 = true
+s3_prefix = "bedrock-llmops-pipeline"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "SenderEmailId=\"nadia@trusst.ai\" RecipientEmailId=\"reyhani.ronak@gmail.com\" ContainerImageURI=\"767397716159.dkr.ecr.us-east-1.amazonaws.com/bedrock-model-customization:latest\" InvokeModelContainerImageURI=\"767397716159.dkr.ecr.us-east-1.amazonaws.com/bedrock-pipeline-initialiser:latest\""
+image_repositories = []
+disable_rollback = false
+profile = "sandbox"

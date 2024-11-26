@@ -1,0 +1,11 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "sagemaker-pipeline-notification"
+resolve_s3 = true
+s3_prefix = "sagemaker-pipeline-notification"
+region = "us-east-1"
+profile = "sandbox"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "S3BucketName=\"sagemaker-pipeline-invokation-bucket\" PipelineName=\"Llama2FMOpsPipeline-00505\" ModelPackageGroupName=\"NousResearch-Llama-2-7b-chat-hf-00505\" SendApprovalEmailImageUri=\"767397716159.dkr.ecr.us-east-1.amazonaws.com/sagemaker-llmops-notify:latest\" SenderEmailId=\"nadia@trusst.ai\" RecipientEmailId=\"reyhani.ronak@gmail.com\""
+image_repositories = []

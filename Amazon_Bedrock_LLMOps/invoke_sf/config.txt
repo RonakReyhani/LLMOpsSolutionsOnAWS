@@ -1,0 +1,4 @@
+image_name=pipeline-initialiser
+repo_name=bedrock-pipeline-initialiser
+aws_account=767397716159
+aws_region=us-east-1
